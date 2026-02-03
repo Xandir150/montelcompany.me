@@ -1,0 +1,134 @@
+@media (max-width: 1200px) {
+    .header {
+        padding-bottom: 21.25vw;
+    }
+    
+    .wrapper__padding {
+        padding: 0 5vw;
+    }
+
+    .wrapper {
+        margin: 0 4.3vw;
+    }
+}
+
+@media (max-width: 840px) {
+    .hero__description {
+        font-size: 24px;
+    }
+
+    .button__action {
+        font-size: 20px;
+    }
+
+    .header__logo {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__description {
+        font-size: 20px;
+    }
+
+    .hero__description_margin {
+        margin-bottom: 175px;
+    }
+
+    .button__action {
+        font-size: 20px;
+    }
+
+    .button__action_lk {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .wrapper {
+        margin: 0 20px;
+    }
+
+    .wrapper__padding {
+        padding: 0;
+    }
+
+    .header {
+        margin-bottom: -42px;
+        padding-bottom: 105px;
+    }
+
+    .header::before {
+        top: 0;
+    }
+
+    .header__menu {
+        height: 100px;
+    }
+
+    .header__logo {
+        width: 83px;
+    }
+
+    .button__action_lk {
+        font-size: 16px;
+    }
+
+    .button__action_connect {
+        padding: 18px 0;
+        width: 100%;
+    }
+
+    .section__heading {
+        font-size: 32px;
+    }
+
+    .section__heading_large {
+        font-size: 40px;
+        margin-bottom: 17px;
+    }
+
+    .hero__description_margin {
+        margin-bottom: 223px;
+    }
+
+    .section__product {
+        margin-bottom: 50px;
+    }
+
+    .section__address {
+        margin-bottom: 60px;
+    }
+
+    .registration__form {
+        text-align: center;
+    }
+
+    .form__block {
+        margin-bottom: 12px;
+    }
+
+    .form__bottom-block {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 34px;
+    }
+
+    .form__block > input {
+        padding-left: 23px;
+        font-size: 15px;
+        height: 42px;
+    }
+
+    .wrapper__inner {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 50px;
+        gap: 34px;
+    }
+
+    .footer__logo_margin {
+        margin-right: 0;
+    }
+    
+}

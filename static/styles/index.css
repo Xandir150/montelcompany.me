@@ -1,0 +1,285 @@
+.active::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--red);
+    opacity: 0.2;
+}
+
+.connect__info {
+    display: none;
+}
+
+.active > .connect__info {
+    position: relative;
+    display: block;
+    width: 38vw;
+    height: 76.5vh;
+    position: fixed;
+    margin: auto;
+    background: white;
+    border-radius: 1.6vw;
+    z-index: 1;
+    top: calc(50% - 38.25vh);
+    left: calc(50% - 19vw);
+    padding: 5vh 1.6vw 2.5vw 2vw;
+}
+
+.info__exit {
+    --margin: 2.5vw;
+    position: absolute;
+    display: inline-block;
+    width: 1.5vw;
+    background-image: url("../assets/cross.svg");
+    background-size: contain;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    top: var(--margin);
+    right: var(--margin);
+}
+
+.info__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.info__item {
+    font-size: 2vw;
+    font-family: Myriad Light;
+    color: var(--black);
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 52px;
+}
+
+.button__action {
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    font-family: Myriad SemiBold;
+    font-size: 24px;
+}
+
+.section__heading {
+    font-family: Myriad SemiBold;
+    color: var(--red);
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/* Header positioning */
+
+.wrapper__padding {
+    padding: 0 93px;
+}
+
+.header__menu {
+    height: 166px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu_margin {
+    margin-bottom: 47px;
+}
+
+/* Header cosmetics */
+
+.header {
+    position: relative;
+    padding-bottom: 255px;
+    margin-bottom: -60px;
+}
+
+.header__logo > img {
+    width: 100%;
+}
+
+.header::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 113px;
+    z-index: -1;
+    background-image: url("../assets/hero-background.png");
+    background-size: cover contain;
+}
+
+.hero__description {
+    max-width: 808px;
+    font-family: Myriad Light;
+    font-size: 32px;
+}
+
+.button__action_lk {
+    padding: 15px 40px;
+}
+
+.button__action_connect {
+    padding: 20px 80px;
+}
+
+.section__heading_large {
+    font-family: Myriad Bold;
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.hero__description_margin {
+    margin-bottom: 92px;
+}
+
+/* Product positioning and sizing */
+
+.section__product {
+    margin-bottom: 110px;
+}
+
+.product__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+    grid-gap: 20px;
+    grid-auto-columns: 352px;
+    grid-auto-rows: 262px;
+    grid-auto-flow: row;
+    justify-content: center;
+}
+
+.product__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Product cosmetics */
+
+.product__item {
+    background-color: white;
+    text-align: left;
+    border-radius: 20px;
+    border: 2px solid var(--red);
+    font-size: 32px;
+    padding: 30px;
+}
+
+.product__info {
+    font-family: Myriad Light;
+}
+
+.product__link {
+    cursor: pointer;
+    color: var(--red);
+    font-family: Myriad SemiBold;
+}
+
+.product__arrow {
+    --width: 3px;
+    display: inline-block;
+    width: 12px;
+    aspect-ratio: 1 / 1;
+    border-top: var(--width) solid var(--red);
+    border-right: var(--width) solid var(--red);
+    transform: rotate(45deg) translateY(-2px);
+    margin-left: 10px;
+}
+
+/* Address positioning */
+
+.section__address {
+    margin-bottom: 110px;
+}
+
+/* Registration positioning and sizing */
+
+.section__registration {
+    margin-bottom: 100px;
+}
+
+.registration__form {
+    max-width: 538px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form__block {
+    margin-bottom: 20px;
+}
+
+/* Registration cosmetics */
+
+.form__block > * {
+    font-size: 24px;
+    font-family: Myriad SemiBold;
+}
+
+.form__block > input {
+    width: 100%;
+    height: 70px;
+    border: 2px solid var(--red);
+    border-radius: 10px;
+    padding-left: 40px;
+    color: var(--grey);
+    outline: none;
+}
+
+.form__span {
+    font-family: Myriad Light;
+}
+
+.form__link {
+    color: var(--red);
+}
+
+.button__action_reg {
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* Footer positioning and sizing */
+
+.footer {
+    background-color: var(--red);
+    height: 500px;
+}
+
+.wrapper__inner {
+    padding-top: 118px;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer__logo_margin {
+    margin-right: 113px;
+}
+
+/* Footer cosmetics */
+
+.footer__logo {
+    width: 166px;
+    display: flex;
+    aspect-ratio: 1 / 1;
+    border-radius: 40px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__heading {
+    color: white;
+    font-family: Myriad Bold;
+    font-size: 40px;
+    margin-top: 18px;
+}
